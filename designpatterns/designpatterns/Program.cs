@@ -10,3 +10,17 @@ using desgnpatterns.dp;
         {
             shape.Draw();
         }
+
+          // Get the singleton instance
+        Logger logger = Logger.Instance;
+
+        // Use the logger
+        logger.Log("Application started.");
+        logger.Log("An error occurred.");
+
+        // ... other parts of the code can also access the same instance ...
+        Logger anotherLogger = Logger.Instance;
+        anotherLogger.Log("Another message"); // This will also go to the same log (console in this example)
+
+        // Verify that it is the same instance
+        Console.WriteLine(object.ReferenceEquals(logger, anotherLogger)); // True
