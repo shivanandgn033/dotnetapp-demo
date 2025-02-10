@@ -1,0 +1,15 @@
+E:\GitHub Project\dotnetapp\designpatterns\designpatterns\obj\Debug\net9.0\designpatterns.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub Project\dotnetapp\designpatterns\designpatterns\obj\Debug\net9.0\designpatterns.AssemblyInfoInputs.cache
+E:\GitHub Project\dotnetapp\designpatterns\designpatterns\obj\Debug\net9.0\designpatterns.AssemblyInfo.cs
+E:\GitHub Project\dotnetapp\designpatterns\designpatterns\obj\Debug\net9.0\designpatterns.csproj.CoreCompileInputs.cache
+E:\GitHub Project\dotnetapp\designpatterns\designpatterns\obj\Debug\net9.0\designpatterns.sourcelink.json
+E:\GitHub Project\dotnetapp\designpatterns\designpatterns\bin\Debug\net9.0\designpatterns.exe
+E:\GitHub Project\dotnetapp\designpatterns\designpatterns\bin\Debug\net9.0\designpatterns.deps.json
+E:\GitHub Project\dotnetapp\designpatterns\designpatterns\bin\Debug\net9.0\designpatterns.runtimeconfig.json
+E:\GitHub Project\dotnetapp\designpatterns\designpatterns\bin\Debug\net9.0\designpatterns.dll
+E:\GitHub Project\dotnetapp\designpatterns\designpatterns\bin\Debug\net9.0\designpatterns.pdb
+E:\GitHub Project\dotnetapp\designpatterns\designpatterns\obj\Debug\net9.0\designpatterns.dll
+E:\GitHub Project\dotnetapp\designpatterns\designpatterns\obj\Debug\net9.0\refint\designpatterns.dll
+E:\GitHub Project\dotnetapp\designpatterns\designpatterns\obj\Debug\net9.0\designpatterns.pdb
+E:\GitHub Project\dotnetapp\designpatterns\designpatterns\obj\Debug\net9.0\designpatterns.genruntimeconfig.cache
+E:\GitHub Project\dotnetapp\designpatterns\designpatterns\obj\Debug\net9.0\ref\designpatterns.dll
