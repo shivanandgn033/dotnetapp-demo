@@ -24,3 +24,16 @@ using desgnpatterns.dp;
 
         // Verify that it is the same instance
         Console.WriteLine(object.ReferenceEquals(logger, anotherLogger)); // True
+   
+        // Choose the theme (factory) at runtime
+        IGUIFactory modernFactory = new ModernGUIFactory();
+        Client modernClient = new Client(modernFactory);
+        Console.WriteLine("Modern UI:");
+        modernClient.BuildUI();
+
+
+        IGUIFactory classicFactory = new ClassicGUIFactory();
+        Client classicClient = new Client(classicFactory);
+        Console.WriteLine("\nClassic UI:");
+        classicClient.BuildUI();
+    
