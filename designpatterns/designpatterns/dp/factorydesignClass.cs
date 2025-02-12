@@ -1,4 +1,4 @@
-namespace desgnpatterns.dp;
+namespace designpatterns.dp;
 
 // 1. Define an interface or abstract class for the products
 public interface IShape

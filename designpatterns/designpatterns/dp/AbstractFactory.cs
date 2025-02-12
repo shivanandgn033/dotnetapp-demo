@@ -1,4 +1,4 @@
-namespace desgnpatterns.dp;
+namespace designpatterns.dp;
 // Interfaces for the products (UI elements)
 interface IButton
 {

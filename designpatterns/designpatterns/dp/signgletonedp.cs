@@ -1,4 +1,4 @@
-namespace desgnpatterns.dp;
+namespace designpatterns.dp;
 
 public class Logger
 {
