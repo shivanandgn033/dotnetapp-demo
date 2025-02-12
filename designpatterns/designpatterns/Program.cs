@@ -76,4 +76,16 @@ using designpatterns.dp;
         // Important: Notice how the original sheep is unaffected by the changes to the clones.
         Console.WriteLine("\n");
  //..............................................................................
-    
+
+        IPizzaBuilder pepperoniBuilder = new PepperoniPizzaBuilder();
+        PizzaDirector director = new PizzaDirector(pepperoniBuilder);
+
+        director.ConstructPepperoniPizza();
+        Pizza pepperoniPizza = pepperoniBuilder.GetPizza();
+        Console.WriteLine(pepperoniPizza);
+
+        List<string> customToppings = new List<string> { "Mushrooms", "Onions", "Olives" };
+        director.ConstructCustomPizza("Thick", "Pesto", customToppings, "Medium");
+        Pizza customPizza = pepperoniBuilder.GetPizza(); // Reuse the builder
+        Console.WriteLine(customPizza);
+        Console.WriteLine("\n");
