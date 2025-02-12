@@ -4,15 +4,15 @@ using System;
 
 
 // Prototype interface (or abstract class)
-public interface IAnimal : ICloneable
+public interface IAnimal 
 {
     string Name { get; set; }
     string MakeSound();
-    object Clone(); // Explicit Clone method
+    //IAnimal Clone(); // Explicit Clone method
 }
 
 // Concrete Prototype (Sheep)
-public class Sheep : IAnimal
+public class Sheep : IAnimal, ICloneable
 {
     public string Name { get; set; }
 
@@ -28,7 +28,9 @@ public class Sheep : IAnimal
 
     public object  Clone()
     {
-        return (Sheep)this.MemberwiseClone(); // Shallow copy
+        //return (Sheep)this.MemberwiseClone(); // Shallow copy
+        //return new Sheep(this);
+         return this.MemberwiseClone(); 
     }
 
     // Example of a "deep copy" if needed (important for complex objects)
@@ -43,7 +45,7 @@ public class Sheep : IAnimal
 }
 
 // Concrete Prototype (Dog)
-public class Dog : IAnimal
+public class Dog : IAnimal, ICloneable
 {
     public string Name { get; set; }
 
@@ -59,6 +61,8 @@ public class Dog : IAnimal
 
     public object  Clone()
     {
-        return (Dog)this.MemberwiseClone(); // Shallow copy
+          return this.MemberwiseClone();  
+        //return (Dog)this.MemberwiseClone(); // Shallow copy
+        //return new Dog(this);
     }
 }

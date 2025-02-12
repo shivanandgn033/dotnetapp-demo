@@ -13,11 +13,13 @@ using designpatterns.dp;
         {
             shape.Draw();
         }
+
+        Console.WriteLine("\n");
 //.......................................................................................
 
 
 //...................Singleton design pattern............................................
-          Console.WriteLine("Singaltone desgin pattern:");
+          Console.WriteLine("Singaletone design pattern:");
           // Get the singleton instance
         Logger logger = Logger.Instance;
 
@@ -31,6 +33,7 @@ using designpatterns.dp;
 
         // Verify that it is the same instance
         Console.WriteLine(object.ReferenceEquals(logger, anotherLogger)); // True
+        Console.WriteLine("\n");
 //...........................................................................................        
         Console.WriteLine("Abstract factory desgin pattern:");
         // Choose the theme (factory) at runtime
@@ -44,7 +47,7 @@ using designpatterns.dp;
         Client classicClient = new Client(classicFactory);
         Console.WriteLine("\nClassic UI:");
         classicClient.BuildUI();
-
+        Console.WriteLine("\n");
  //..............................................................................
 
 
@@ -55,13 +58,13 @@ using designpatterns.dp;
         Dog originalDog = new Dog("Buddy");
 
         // Clone the prototypes
-        IAnimal clonedSheep1 = originalSheep.Clone();
+        IAnimal clonedSheep1 = (Sheep)originalSheep.Clone();
         clonedSheep1.Name = "Dolly 2"; // Modify the clone
 
-        IAnimal clonedDog = originalDog.Clone();
+        IAnimal clonedDog = (Dog)originalDog.Clone();
         clonedDog.Name = "Max";
 
-        IAnimal clonedSheep2 = originalSheep.Clone(); // Another clone
+        IAnimal clonedSheep2 =(Sheep)originalSheep.Clone();; // Another clone
 
         // Demonstrate that the original and clones are different objects
         Console.WriteLine($"Original Sheep: {originalSheep.Name}, Sound: {originalSheep.MakeSound()}");
@@ -71,5 +74,6 @@ using designpatterns.dp;
         Console.WriteLine($"Cloned Dog: {clonedDog.Name}, Sound: {clonedDog.MakeSound()}");
 
         // Important: Notice how the original sheep is unaffected by the changes to the clones.
+        Console.WriteLine("\n");
  //..............................................................................
     
