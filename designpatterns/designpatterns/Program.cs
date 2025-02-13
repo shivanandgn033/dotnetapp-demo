@@ -15,6 +15,7 @@ using designpatterns.dp;
         }
 
         Console.WriteLine("\n");
+        
 //.......................................................................................
 
 
@@ -89,3 +90,36 @@ using designpatterns.dp;
         Pizza customPizza = pepperoniBuilder.GetPizza(); // Reuse the builder
         Console.WriteLine(customPizza);
         Console.WriteLine("\n");
+
+        //..........................................................................
+                // Create the chain of handlers
+        HelpHandler buttonHandler = new ButtonHelpHandler();
+        HelpHandler formHandler = new FormHelpHandler();
+        HelpHandler applicationHandler = new ApplicationHelpHandler();
+
+        // Define the chain order: Button -> Form -> Application
+        buttonHandler.SetNext(formHandler).SetNext(applicationHandler); // Fluent chaining setup
+
+        // Simulate help requests
+        HelpRequest buttonHelp = new HelpRequest("Button");
+        HelpRequest formHelp = new HelpRequest("Form");
+        HelpRequest generalHelp = new HelpRequest("General");
+        HelpRequest unknownHelp = new HelpRequest("Menu"); // No specific handler
+
+        Console.WriteLine("--- Processing Help Requests ---");
+
+        Console.WriteLine("\nRequesting Button Help:");
+        buttonHandler.HandleHelpRequest(buttonHelp); // Start with the first handler in the chain
+
+        Console.WriteLine("\nRequesting Form Help:");
+        buttonHandler.HandleHelpRequest(formHelp);
+
+        Console.WriteLine("\nRequesting General Help:");
+        buttonHandler.HandleHelpRequest(generalHelp);
+
+        Console.WriteLine("\nRequesting Unknown Help (Menu):");
+        buttonHandler.HandleHelpRequest(unknownHelp); // Will go through the chain and reach the end
+
+        Console.ReadKey();
+        //..........................................................................
+        
