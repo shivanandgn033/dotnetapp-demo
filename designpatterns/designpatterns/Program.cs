@@ -122,4 +122,34 @@ using designpatterns.dp;
 
         Console.ReadKey();
         //..........................................................................
-        
+
+             Console.WriteLine("\nCommand design pattern:");
+        // 5 client call
+        TextEditor editor = new TextEditor();
+        EditorInvoker invoker = new EditorInvoker(editor);
+
+        // Perform some actions
+        invoker.ExecuteCommand(new InsertTextCommand(editor, "Hello "));
+        invoker.ExecuteCommand(new InsertTextCommand(editor, "World!"));
+        invoker.ExecuteCommand(new DeleteTextCommand(editor)); // Delete '!'
+
+        Console.WriteLine($"\nCurrent Text: '{editor.GetText()}'\n");
+
+        // Undo the last command (DeleteText)
+        invoker.UndoLastCommand();
+
+        Console.WriteLine($"\nCurrent Text after Undo: '{editor.GetText()}'\n");
+
+        // Undo again (Undo Insert "World!")
+        invoker.UndoLastCommand();
+
+        Console.WriteLine($"\nCurrent Text after 2nd Undo: '{editor.GetText()}'\n");
+
+        // Try to undo when no more commands in history
+        invoker.UndoLastCommand();
+
+
+        Console.ReadKey();
+
+
+        //..........................................................................
