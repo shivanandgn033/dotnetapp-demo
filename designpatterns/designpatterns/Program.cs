@@ -4,6 +4,7 @@ using designpatterns.dp;
 
 
 //.............Factory desgin pattern...................................................
+        Console.WriteLine("\n..........................................................................");
         Console.WriteLine("Factory desgin pattern:");
         string shapeType = "circle"; // Get from user input
         //string shapeType = "Square";
@@ -20,7 +21,8 @@ using designpatterns.dp;
 
 
 //...................Singleton design pattern............................................
-          Console.WriteLine("Singaletone design pattern:");
+        Console.WriteLine("\n..........................................................................");
+        Console.WriteLine("Singaletone design pattern:");
           // Get the singleton instance
         Logger logger = Logger.Instance;
 
@@ -36,6 +38,7 @@ using designpatterns.dp;
         Console.WriteLine(object.ReferenceEquals(logger, anotherLogger)); // True
         Console.WriteLine("\n");
 //...........................................................................................        
+        Console.WriteLine("\n..........................................................................");
         Console.WriteLine("Abstract factory desgin pattern:");
         // Choose the theme (factory) at runtime
         IGUIFactory modernFactory = new ModernGUIFactory();
@@ -53,7 +56,8 @@ using designpatterns.dp;
 
 
  //..............................................................................
-      Console.WriteLine("Prototype desgin pattern:");
+        Console.WriteLine("\n..........................................................................");
+        Console.WriteLine("Prototype desgin pattern:");
      // Create prototypes
         Sheep originalSheep = new Sheep("Dolly");
         Dog originalDog = new Dog("Buddy");
@@ -78,6 +82,9 @@ using designpatterns.dp;
         Console.WriteLine("\n");
  //..............................................................................
 
+        Console.WriteLine("\n..........................................................................");
+        Console.WriteLine("\nBuilder design pattern:");
+
         IPizzaBuilder pepperoniBuilder = new PepperoniPizzaBuilder();
         PizzaDirector director = new PizzaDirector(pepperoniBuilder);
 
@@ -93,6 +100,8 @@ using designpatterns.dp;
 
         //..........................................................................
                 // Create the chain of handlers
+        Console.WriteLine("\n..........................................................................");
+        Console.WriteLine("\nchain of handlers design pattern:");
         HelpHandler buttonHandler = new ButtonHelpHandler();
         HelpHandler formHandler = new FormHelpHandler();
         HelpHandler applicationHandler = new ApplicationHelpHandler();
@@ -123,7 +132,8 @@ using designpatterns.dp;
         Console.ReadKey();
         //..........................................................................
 
-             Console.WriteLine("\nCommand design pattern:");
+        Console.WriteLine("\n..........................................................................");
+        Console.WriteLine("\nCommand design pattern:");
         // 5 client call
         TextEditor editor = new TextEditor();
         EditorInvoker invoker = new EditorInvoker(editor);
@@ -152,4 +162,42 @@ using designpatterns.dp;
         Console.ReadKey();
 
 
+        //..........................................................................
+        
+                // Example: (x AND y) OR (NOT x AND true)
+
+        // Build the Abstract Syntax Tree (AST)
+
+        // Terminal Expressions
+        Console.WriteLine("\n..........................................................................");
+        Console.WriteLine("\nInterpreter design pattern:");
+        VariableExpression x = new VariableExpression("x");
+        VariableExpression y = new VariableExpression("y");
+        LiteralExpression trueLiteral = new LiteralExpression(true);
+
+        // Non-terminal Expressions
+        AndExpression andExpression1 = new AndExpression(x, y);         // (x AND y)
+        NotExpression notExpression = new NotExpression(x);           // (NOT x)
+        AndExpression andExpression2 = new AndExpression(notExpression, trueLiteral); // (NOT x AND true)
+        OrExpression orExpression = new OrExpression(andExpression1, andExpression2); // (x AND y) OR (NOT x AND true)
+
+        // Context - set variable values
+        Context context = new Context();
+        context.SetVariable("x", true);
+        context.SetVariable("y", false);
+
+        // Interpret the expression
+        bool result = orExpression.Interpret(context);
+
+        Console.WriteLine($"Expression: (x AND y) OR (NOT x AND true)");
+        Console.WriteLine($"Result for x=true, y=false: {result}"); // Output: Result for x=true, y=false: True
+
+        context.SetVariable("x", false);
+        context.SetVariable("y", true);
+        result = orExpression.Interpret(context);
+        Console.WriteLine($"Result for x=false, y=true: {result}"); // Output: Result for x=false, y=true: False
+
+
+        Console.ReadKey();
+        
         //..........................................................................
