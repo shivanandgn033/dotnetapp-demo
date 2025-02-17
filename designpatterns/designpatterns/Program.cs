@@ -223,3 +223,14 @@ using designpatterns.dp;
         Console.ReadKey();
         //..........................................................................
         Console.WriteLine("\n..........................................................................");
+
+        //......................................................................
+        Console.WriteLine("\n..........................................................................");
+        Console.WriteLine("\nBridge design pattern:");
+        IShapeClass vectorCircle = new CircleShape(1, 2, 5, new VectorDrawingAPI());
+        IShapeClass rasterCircle = new CircleShape(5, 7, 10, new RasterDrawingAPI());
+
+        vectorCircle.Draw(); // Vector API: Drawing circle at (1,2) with radius 5
+        rasterCircle.Draw(); // Raster API: Drawing circle at (5,7) with radius 10
+        Console.WriteLine("\n..........................................................................");
+        //.....................................................................
