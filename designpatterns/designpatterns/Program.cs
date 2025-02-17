@@ -234,3 +234,25 @@ using designpatterns.dp;
         rasterCircle.Draw(); // Raster API: Drawing circle at (5,7) with radius 10
         Console.WriteLine("\n..........................................................................");
         //.....................................................................
+        
+        Console.WriteLine("\n..........................................................................");
+        Console.WriteLine("\nComposite design pattern:");
+        DirectoryComponent rootDir = new DirectoryComponent("Root");
+        DirectoryComponent musicDir = new DirectoryComponent("Music");
+        DirectoryComponent picturesDir = new DirectoryComponent("Pictures");
+
+        FileComponent song1 = new FileComponent("song1.mp3");
+        FileComponent song2 = new FileComponent("song2.mp3");
+        FileComponent picture1 = new FileComponent("image1.jpg");
+
+        musicDir.Add(song1);
+        musicDir.Add(song2);
+        picturesDir.Add(picture1);
+
+        rootDir.Add(musicDir);
+        rootDir.Add(picturesDir);
+
+        rootDir.Display(); // Display the entire directory structure
+
+        Console.WriteLine("\n..........................................................................");
+        //....................................................................
