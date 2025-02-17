@@ -201,3 +201,25 @@ using designpatterns.dp;
         Console.ReadKey();
         
         //..........................................................................
+        Console.WriteLine("\n..........................................................................");
+        Console.WriteLine("\nAdapter design pattern:");
+        // Using the Legacy Reporting System through the Adapter
+
+        // 1. Instantiate the Legacy Adaptee
+        LegacyReportGenerator legacyGenerator = new LegacyReportGenerator();
+
+        // 2. Create the Adapter, wrapping the Legacy Generator
+        INewReportGenerator adapter = new LegacyReportAdapter(legacyGenerator);
+
+        // 3. Instantiate the New Reporting Application, using the Adapter
+        NewReportingApplication newApp = new NewReportingApplication(adapter);
+
+        // 4. Generate and Display the report using the New Application (which internally uses the Adapter and Legacy System)
+        DateTime startDate = new DateTime(2023, 10, 26);
+        DateTime endDate = new DateTime(2023, 10, 27);
+        newApp.DisplaySalesReport(startDate, endDate);
+
+
+        Console.ReadKey();
+        //..........................................................................
+        Console.WriteLine("\n..........................................................................");
