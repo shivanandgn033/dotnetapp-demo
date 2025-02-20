@@ -1296,3 +1296,204 @@ public class Client
 }
 ```
 This list provides a good starting point for understanding and using design patterns in C#. Remember that these are simplified examples to illustrate the core ideas. Real-world implementations might be more complex and tailored to specific needs.  It's highly recommended to study each pattern in more depth as you encounter situations where they might be applicable. There are many excellent books and online resources (like those I mentioned in our earlier conversations) that provide more detailed explanations and use cases.
+
+
+
+Let's explore the SOLID principles with C# examples.  SOLID is an acronym coined by Robert C. Martin (Uncle Bob) that represents five key principles of object-oriented design.  Adhering to these principles helps create maintainable, flexible, and scalable software.
+
+Single Responsibility Principle (SRP)
+Open/Closed Principle (OCP)
+Liskov Substitution Principle (LSP)
+Interface Segregation Principle (ISP)
+Dependency Inversion Principle (DIP)   
+
+#### 1. Single Responsibility Principle (SRP)
+
+A class should have one, and only one, reason to change.  This means that each class should have a single responsibility or job.
+
+```C#
+
+// Bad example - Two responsibilities (reporting and persistence)
+public class Order
+{
+    public void CalculateTotal() { /* ... */ }
+    public void SaveToDatabase() { /* ... */ }
+}
+
+// Good example - Separated responsibilities
+public class Order
+{
+    public void CalculateTotal() { /* ... */ }
+}
+
+public class OrderRepository
+{
+    public void Save(Order order) { /* ... */ }
+}
+```
+#### 2. Open/Closed Principle (OCP)
+
+Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.  This means you should be able to add new functionality without changing existing code.  Abstract classes and interfaces are key to this.   
+
+```C#
+
+// Bad example - Modifying the class to add new shape types
+public class Shape
+{
+    public string Type { get; set; } // "Rectangle", "Circle"
+    public void Draw()
+    {
+        if (Type == "Rectangle") { /* ... */ }
+        else if (Type == "Circle") { /* ... */ }
+    }
+}
+
+// Good example - Using inheritance and polymorphism
+public abstract class Shape
+{
+    public abstract void Draw();
+}
+
+public class Rectangle : Shape
+{
+    public override void Draw() { /* ... */ }
+}
+
+public class Circle : Shape
+{
+    public override void Draw() { /* ... */ }
+}
+
+// Adding a new shape doesn't require modifying existing Shape or its subclasses
+public class Triangle : Shape
+{
+    public override void Draw() { /* ... */ }
+}
+```
+#### 3. Liskov Substitution Principle (LSP)
+
+Objects of a derived class should be substitutable for objects of their base class without altering any of the desirable properties of that program.  Essentially, if you have a base class, any derived class should be usable wherever the base class is used.
+
+```C#
+
+public class Bird
+{
+    public virtual void Fly() { /* ... */ }
+}
+
+public class Eagle : Bird
+{
+    public override void Fly() { /* ... */ }
+}
+
+public class Ostrich : Bird // Ostrich can't fly!
+{
+    // Violates LSP - Can't substitute Ostrich where Bird is expected to fly.
+    // One solution is to throw an exception or not override Fly at all.
+    // A better solution might be to rethink the inheritance hierarchy (Bird and FlyingBird).
+    // public override void Fly() { throw new NotImplementedException(); } 
+}
+
+// Example usage
+public void MakeBirdFly(Bird bird)
+{
+    bird.Fly();
+}
+
+Eagle eagle = new Eagle();
+MakeBirdFly(eagle); // Works fine
+
+Ostrich ostrich = new Ostrich();
+// MakeBirdFly(ostrich); // Breaks the program because Ostrich can't fly.
+```
+
+#### 4. Interface Segregation Principle (ISP)
+
+Many specific interfaces are better than one general-purpose interface.  Clients should not be forced to depend on methods they don't use.  This principle is about keeping interfaces small and focused.   
+
+```C#
+
+// Bad example - Fat interface
+public interface IPrint
+{
+    void Print();
+    void Scan();
+    void Fax();
+}
+
+// Good example - Segregated interfaces
+public interface IPrinter
+{
+    void Print();
+}
+
+public interface IScanner
+{
+    void Scan();
+}
+
+public interface IFax
+{
+    void Fax();
+}
+
+public class MultiFunctionPrinter : IPrinter, IScanner, IFax { /* ... */ }
+public class SimplePrinter : IPrinter { /* ... */ } // Doesn't need to implement Scan or Fax
+```
+
+#### 5. Dependency Inversion Principle (DIP)
+
+High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.   
+
+```C#
+
+// Bad example - High-level depends on low-level
+public class Button
+{
+    private Lamp _lamp = new Lamp(); // Direct dependency
+
+    public void Press()
+    {
+        _lamp.TurnOn();
+    }
+}
+
+public class Lamp
+{
+    public void TurnOn() { /* ... */ }
+}
+
+// Good example - Dependency inversion
+public interface ISwitchable
+{
+    void TurnOn();
+}
+
+public class Button
+{
+    private ISwitchable _device; // Depends on abstraction
+
+    public Button(ISwitchable device) // Injected dependency
+    {
+        _device = device;
+    }
+
+    public void Press()
+    {
+        _device.TurnOn();
+    }
+}
+
+public class Lamp : ISwitchable
+{
+    public void TurnOn() { /* ... */ }
+}
+
+public class Fan : ISwitchable
+{
+    public void TurnOn() { /* ... */ }
+}
+```
+// Now the Button can work with any ISwitchable device!
+
+These examples illustrate the core concepts of the SOLID principles.  Applying them requires careful consideration of your design, but the benefits in terms of maintainability and flexibility are significant.  Remember that these are principles, not rigid rules. There might be situations where strict adherence isn't the most practical approach.  The key is understanding the intent behind each principle and applying them judiciously.
