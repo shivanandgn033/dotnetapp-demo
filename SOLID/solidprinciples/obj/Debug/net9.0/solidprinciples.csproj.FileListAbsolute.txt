@@ -1,0 +1,15 @@
+E:\GitHub Project\dotnetapp\SOLID\solidprinciples\obj\Debug\net9.0\solidprinciples.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub Project\dotnetapp\SOLID\solidprinciples\obj\Debug\net9.0\solidprinciples.AssemblyInfoInputs.cache
+E:\GitHub Project\dotnetapp\SOLID\solidprinciples\obj\Debug\net9.0\solidprinciples.AssemblyInfo.cs
+E:\GitHub Project\dotnetapp\SOLID\solidprinciples\obj\Debug\net9.0\solidprinciples.csproj.CoreCompileInputs.cache
+E:\GitHub Project\dotnetapp\SOLID\solidprinciples\obj\Debug\net9.0\solidprinciples.sourcelink.json
+E:\GitHub Project\dotnetapp\SOLID\solidprinciples\bin\Debug\net9.0\solidprinciples.exe
+E:\GitHub Project\dotnetapp\SOLID\solidprinciples\bin\Debug\net9.0\solidprinciples.deps.json
+E:\GitHub Project\dotnetapp\SOLID\solidprinciples\bin\Debug\net9.0\solidprinciples.runtimeconfig.json
+E:\GitHub Project\dotnetapp\SOLID\solidprinciples\bin\Debug\net9.0\solidprinciples.dll
+E:\GitHub Project\dotnetapp\SOLID\solidprinciples\bin\Debug\net9.0\solidprinciples.pdb
+E:\GitHub Project\dotnetapp\SOLID\solidprinciples\obj\Debug\net9.0\solidprinciples.dll
+E:\GitHub Project\dotnetapp\SOLID\solidprinciples\obj\Debug\net9.0\refint\solidprinciples.dll
+E:\GitHub Project\dotnetapp\SOLID\solidprinciples\obj\Debug\net9.0\solidprinciples.pdb
+E:\GitHub Project\dotnetapp\SOLID\solidprinciples\obj\Debug\net9.0\solidprinciples.genruntimeconfig.cache
+E:\GitHub Project\dotnetapp\SOLID\solidprinciples\obj\Debug\net9.0\ref\solidprinciples.dll
