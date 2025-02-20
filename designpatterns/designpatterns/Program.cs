@@ -256,3 +256,16 @@ using designpatterns.dp;
 
         Console.WriteLine("\n..........................................................................");
         //....................................................................
+        Console.WriteLine("\n..........................................................................");
+        Console.WriteLine("\nDecorator design pattern:");
+        ICoffee coffee = new SimpleCoffee();
+        Console.WriteLine($"{coffee.GetDescription()} - Cost: ${coffee.GetCost()}"); // Simple Coffee - Cost: $1
+
+        ICoffee milkCoffee = new MilkDecorator(coffee);
+        Console.WriteLine($"{milkCoffee.GetDescription()} - Cost: ${milkCoffee.GetCost()}"); // Simple Coffee, with Milk - Cost: $1.3
+
+        ICoffee sugarMilkCoffee = new SugarDecorator(milkCoffee);
+        Console.WriteLine($"{sugarMilkCoffee.GetDescription()} - Cost: ${sugarMilkCoffee.GetCost()}"); // Simple Coffee, with Milk, with Sugar - Cost: $1.4
+    
+        Console.WriteLine("\n..........................................................................");
+        //....................................................................
