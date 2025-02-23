@@ -15,3 +15,5 @@ class Author
             return $"{_firstName} {_lastName}";
         }
     }
+
+    //We have not implemented unnecessary characteristics like age, address, or telephone number. We may implement these attributes later, if we discover we have a use for them. In the meantime, we adhere to the YAGNI principle by not implementing unnecessary features and avoiding code bloat—additional features that may make the code harder to comprehend, use, and maintain.
