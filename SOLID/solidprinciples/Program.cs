@@ -53,3 +53,15 @@ Console.WriteLine($"Rectangle Area: {rect.Area()}"); // Output: 200
             Console.WriteLine("\n..........................................................................");
 
 //...........................................................................
+
+    // In this example, the Author class follows the YAGNI principle of implementing minimal functionality. For this simple example, we have considered only two attributes of the Author entity, i.e. the first name and last name.
+    // We have not implemented unnecessary characteristics like age, address, or telephone number. We may implement these attributes later, if we discover we have a use for them. In the meantime, we adhere to the YAGNI principle by not implementing unnecessary features and avoiding code bloat—additional features that may make the code harder to comprehend, use, and maintain.
+    
+            Console.WriteLine("\n..........................................................................");
+            Console.WriteLine("\n.YOGNI principle example");
+
+            Author author = new Author("Joydip", "Kanjilal");
+            Console.WriteLine($"Full name: {author.GetAuthorName()}");
+            Console.ReadKey();
+            Console.WriteLine("\n..........................................................................");
+//...........................................................................
