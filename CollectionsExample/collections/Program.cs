@@ -116,7 +116,7 @@ using System.Collections.Generic;
             Console.WriteLine(fruit);
         }
 
-        Explanation and Key Concepts:
+       
 
 
 
