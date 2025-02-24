@@ -88,3 +88,35 @@ using System.Collections.Generic;
         {
             Console.WriteLine(fruit);
         }
+
+        Explanation and Key Concepts:
+
+// List<T>:
+// Represents a dynamically sized array.
+// Allows you to add, remove, and access elements by index.
+// Efficient for sequential access.
+
+// Dictionary<TKey, TValue>:
+// Stores key-value pairs.
+// Provides fast lookups based on keys.
+// Useful for mapping data.
+
+// HashSet<T>:
+// Stores unique elements.
+// Efficient for checking if an element exists.
+// Useful for removing duplicates.
+
+// Queue<T>:
+// Implements a First-In, First-Out (FIFO) data structure.
+// Elements are added to the back and removed from the front.
+// Used in scenarios like task scheduling.
+
+// Stack<T>:
+// Implements a Last-In, First-Out (LIFO) data structure.
+// Elements are added and removed from the top.
+// Used in scenarios like undo/redo functionality.
+
+// LinkedList<T>:
+// A doubly linked list, meaning each element holds a reference to the next and previous element.
+// Efficient for inserting and removing elements in the middle of the list.
+// Less efficient for random access than a List<T>.
