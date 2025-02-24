@@ -1,0 +1,15 @@
+E:\GitHub Project\dotnetapp\CollectionsExample\collections\bin\Debug\net9.0\collections.exe
+E:\GitHub Project\dotnetapp\CollectionsExample\collections\bin\Debug\net9.0\collections.deps.json
+E:\GitHub Project\dotnetapp\CollectionsExample\collections\bin\Debug\net9.0\collections.runtimeconfig.json
+E:\GitHub Project\dotnetapp\CollectionsExample\collections\bin\Debug\net9.0\collections.dll
+E:\GitHub Project\dotnetapp\CollectionsExample\collections\bin\Debug\net9.0\collections.pdb
+E:\GitHub Project\dotnetapp\CollectionsExample\collections\obj\Debug\net9.0\collections.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub Project\dotnetapp\CollectionsExample\collections\obj\Debug\net9.0\collections.AssemblyInfoInputs.cache
+E:\GitHub Project\dotnetapp\CollectionsExample\collections\obj\Debug\net9.0\collections.AssemblyInfo.cs
+E:\GitHub Project\dotnetapp\CollectionsExample\collections\obj\Debug\net9.0\collections.csproj.CoreCompileInputs.cache
+E:\GitHub Project\dotnetapp\CollectionsExample\collections\obj\Debug\net9.0\collections.sourcelink.json
+E:\GitHub Project\dotnetapp\CollectionsExample\collections\obj\Debug\net9.0\collections.dll
+E:\GitHub Project\dotnetapp\CollectionsExample\collections\obj\Debug\net9.0\refint\collections.dll
+E:\GitHub Project\dotnetapp\CollectionsExample\collections\obj\Debug\net9.0\collections.pdb
+E:\GitHub Project\dotnetapp\CollectionsExample\collections\obj\Debug\net9.0\collections.genruntimeconfig.cache
+E:\GitHub Project\dotnetapp\CollectionsExample\collections\obj\Debug\net9.0\ref\collections.dll
