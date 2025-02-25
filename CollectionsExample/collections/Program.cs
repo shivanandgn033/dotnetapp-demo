@@ -3,3 +3,4 @@
 GenericCollection.GenericCollectionMethod();
 NonGenericCollection.NonGenericCollectionMethod();
 EnumerableQueryableExample.EnumerableQueryableExampleMethod();
+LinqCollectionsExample.LinqCollectionsExampleMethod();
