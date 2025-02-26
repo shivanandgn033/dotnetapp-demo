@@ -1,0 +1,15 @@
+E:\GitHub Project\dotnetapp\delegates\delegatedemo\obj\Debug\net9.0\delegatedemo.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub Project\dotnetapp\delegates\delegatedemo\obj\Debug\net9.0\delegatedemo.AssemblyInfoInputs.cache
+E:\GitHub Project\dotnetapp\delegates\delegatedemo\obj\Debug\net9.0\delegatedemo.AssemblyInfo.cs
+E:\GitHub Project\dotnetapp\delegates\delegatedemo\obj\Debug\net9.0\delegatedemo.csproj.CoreCompileInputs.cache
+E:\GitHub Project\dotnetapp\delegates\delegatedemo\obj\Debug\net9.0\delegatedemo.sourcelink.json
+E:\GitHub Project\dotnetapp\delegates\delegatedemo\bin\Debug\net9.0\delegatedemo.exe
+E:\GitHub Project\dotnetapp\delegates\delegatedemo\bin\Debug\net9.0\delegatedemo.deps.json
+E:\GitHub Project\dotnetapp\delegates\delegatedemo\bin\Debug\net9.0\delegatedemo.runtimeconfig.json
+E:\GitHub Project\dotnetapp\delegates\delegatedemo\bin\Debug\net9.0\delegatedemo.dll
+E:\GitHub Project\dotnetapp\delegates\delegatedemo\bin\Debug\net9.0\delegatedemo.pdb
+E:\GitHub Project\dotnetapp\delegates\delegatedemo\obj\Debug\net9.0\delegatedemo.dll
+E:\GitHub Project\dotnetapp\delegates\delegatedemo\obj\Debug\net9.0\refint\delegatedemo.dll
+E:\GitHub Project\dotnetapp\delegates\delegatedemo\obj\Debug\net9.0\delegatedemo.pdb
+E:\GitHub Project\dotnetapp\delegates\delegatedemo\obj\Debug\net9.0\delegatedemo.genruntimeconfig.cache
+E:\GitHub Project\dotnetapp\delegates\delegatedemo\obj\Debug\net9.0\ref\delegatedemo.dll

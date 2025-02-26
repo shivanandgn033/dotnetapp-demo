@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "delegatedemo/1.0.0": {
+        "runtime": {
+          "delegatedemo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "delegatedemo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
