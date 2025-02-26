@@ -9,7 +9,7 @@ public class DelegateExample
     public static int Multiply(int a, int b) { return a * b; }
     public static int Divide(int a, int b) { return a / b; }
 
-
+     // 1. Delegate Declaration (Defining the signature)
     delegate int MathOperation(int x, int y); // Declares a delegate type
 
    public static void calldelegateExample(){
