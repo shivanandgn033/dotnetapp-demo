@@ -32,7 +32,35 @@ using delegatedemo.delegateclass;
         //using a lambda expression as a callback
         CallbackExample.PerformOperation(100, 2, (result) => Console.WriteLine($"Lambda callback: Result = {result}"));
     //.........................................................................................................
+             // Example 1: Transform int to string
+        int number = 123;
+        string numberString = GenericDelegateExample.Transform(number, n => n.ToString()); //Using lambda expression
+        Console.WriteLine($"Transformed number: {numberString}");
 
+        // Example 2: Transform string to int
+        string text = "456";
+        int parsedNumber = GenericDelegateExample.Transform(text, s => int.Parse(s));
+        Console.WriteLine($"Parsed number: {parsedNumber}");
+
+        // Example 3: Process a string
+        string message = "Hello, world!";
+        GenericDelegateExample.Process(message, m => Console.WriteLine($"Message: {m.ToUpper()}"));
+
+        // Example 4: Process an integer
+        int value = 7;
+        GenericDelegateExample.Process(value, v => Console.WriteLine($"Value squared: {v * v}"));
+
+        // Example 5: Validate an integer
+        int age = 25;
+        bool isAdult = GenericDelegateExample.IsValid(age, a => a >= 18);
+        Console.WriteLine($"Is adult: {isAdult}");
+
+        // Example 6: Validate a string
+        string username = "john_doe";
+        bool isValidUsername = GenericDelegateExample.IsValid(username, u => u.Length >= 5);
+        Console.WriteLine($"Is valid username: {isValidUsername}");
+
+   //...........................................................................................................
       AsyncDelegateExample.testasynccallback();
      //   Console.WriteLine($"Main thread: {Thread.CurrentThread.ManagedThreadId}");
 
