@@ -60,6 +60,8 @@ using delegatedemo.delegateclass;
         bool isValidUsername = GenericDelegateExample.IsValid(username, u => u.Length >= 5);
         Console.WriteLine($"Is valid username: {isValidUsername}");
 
+    //......................................................................................................
+        lambdaexpression.lambdaexpressions();
    //...........................................................................................................
       AsyncDelegateExample.testasynccallback();
      //   Console.WriteLine($"Main thread: {Thread.CurrentThread.ManagedThreadId}");
