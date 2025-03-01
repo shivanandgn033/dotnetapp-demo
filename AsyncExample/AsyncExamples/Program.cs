@@ -52,3 +52,14 @@
 
 
         //............................................................................
+
+        string url = "https://jsonplaceholder.typicode.com/todos/1";
+        string data = await AsyncDownloadExample.DownloadDataAsync(url);
+
+        if (data != null)
+        {
+            Console.WriteLine($"Downloaded data: {data.Substring(0, Math.Min(200, data.Length))}..."); //print first 200 chars.
+        }
+
+        Console.WriteLine("Main method completed.");
+        //............................................................................
