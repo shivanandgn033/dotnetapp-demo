@@ -13,3 +13,17 @@ E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\obj\Debug\net9.0\refint\E
 E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\obj\Debug\net9.0\ExceptionHadling.pdb
 E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\obj\Debug\net9.0\ExceptionHadling.genruntimeconfig.cache
 E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\obj\Debug\net9.0\ref\ExceptionHadling.dll
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\obj\Debug\net9.0\ExceptionHadling.csproj.AssemblyReference.cache
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\bin\Debug\net9.0\Microsoft.Extensions.Configuration.dll
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Binder.dll
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\bin\Debug\net9.0\Microsoft.Extensions.Logging.Configuration.dll
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\bin\Debug\net9.0\Microsoft.Extensions.Logging.Console.dll
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\bin\Debug\net9.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\obj\Debug\net9.0\Exceptio.B5A3D049.Up2Date
