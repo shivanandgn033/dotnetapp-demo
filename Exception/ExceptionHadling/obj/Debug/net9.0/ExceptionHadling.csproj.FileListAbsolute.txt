@@ -1,0 +1,15 @@
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\bin\Debug\net9.0\ExceptionHadling.exe
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\bin\Debug\net9.0\ExceptionHadling.deps.json
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\bin\Debug\net9.0\ExceptionHadling.runtimeconfig.json
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\bin\Debug\net9.0\ExceptionHadling.dll
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\bin\Debug\net9.0\ExceptionHadling.pdb
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\obj\Debug\net9.0\ExceptionHadling.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\obj\Debug\net9.0\ExceptionHadling.AssemblyInfoInputs.cache
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\obj\Debug\net9.0\ExceptionHadling.AssemblyInfo.cs
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\obj\Debug\net9.0\ExceptionHadling.csproj.CoreCompileInputs.cache
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\obj\Debug\net9.0\ExceptionHadling.sourcelink.json
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\obj\Debug\net9.0\ExceptionHadling.dll
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\obj\Debug\net9.0\refint\ExceptionHadling.dll
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\obj\Debug\net9.0\ExceptionHadling.pdb
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\obj\Debug\net9.0\ExceptionHadling.genruntimeconfig.cache
+E:\GitHub Project\dotnetapp\Exception\ExceptionHadling\obj\Debug\net9.0\ref\ExceptionHadling.dll

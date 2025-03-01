@@ -1,0 +1,2 @@
+﻿using ExceptionHadling;
+ExceptionHandlingExample.exceptioncall();
