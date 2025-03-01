@@ -4,7 +4,7 @@ public class ExceptionHandlingExample
 {
   public static void exceptioncall()
   {
-            try
+        try
         {
             // Code that might throw an exception
             Console.Write("Enter a number: ");
