@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "AsyncExamples/1.0.0": {
+        "runtime": {
+          "AsyncExamples.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AsyncExamples/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

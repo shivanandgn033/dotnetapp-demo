@@ -1,0 +1,15 @@
+E:\GitHub Project\dotnetapp\AsyncExample\AsyncExamples\bin\Debug\net9.0\AsyncExamples.exe
+E:\GitHub Project\dotnetapp\AsyncExample\AsyncExamples\bin\Debug\net9.0\AsyncExamples.deps.json
+E:\GitHub Project\dotnetapp\AsyncExample\AsyncExamples\bin\Debug\net9.0\AsyncExamples.runtimeconfig.json
+E:\GitHub Project\dotnetapp\AsyncExample\AsyncExamples\bin\Debug\net9.0\AsyncExamples.dll
+E:\GitHub Project\dotnetapp\AsyncExample\AsyncExamples\bin\Debug\net9.0\AsyncExamples.pdb
+E:\GitHub Project\dotnetapp\AsyncExample\AsyncExamples\obj\Debug\net9.0\AsyncExamples.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub Project\dotnetapp\AsyncExample\AsyncExamples\obj\Debug\net9.0\AsyncExamples.AssemblyInfoInputs.cache
+E:\GitHub Project\dotnetapp\AsyncExample\AsyncExamples\obj\Debug\net9.0\AsyncExamples.AssemblyInfo.cs
+E:\GitHub Project\dotnetapp\AsyncExample\AsyncExamples\obj\Debug\net9.0\AsyncExamples.csproj.CoreCompileInputs.cache
+E:\GitHub Project\dotnetapp\AsyncExample\AsyncExamples\obj\Debug\net9.0\AsyncExamples.sourcelink.json
+E:\GitHub Project\dotnetapp\AsyncExample\AsyncExamples\obj\Debug\net9.0\AsyncExamples.dll
+E:\GitHub Project\dotnetapp\AsyncExample\AsyncExamples\obj\Debug\net9.0\refint\AsyncExamples.dll
+E:\GitHub Project\dotnetapp\AsyncExample\AsyncExamples\obj\Debug\net9.0\AsyncExamples.pdb
+E:\GitHub Project\dotnetapp\AsyncExample\AsyncExamples\obj\Debug\net9.0\AsyncExamples.genruntimeconfig.cache
+E:\GitHub Project\dotnetapp\AsyncExample\AsyncExamples\obj\Debug\net9.0\ref\AsyncExamples.dll
