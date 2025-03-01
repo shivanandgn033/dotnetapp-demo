@@ -44,5 +44,5 @@ public class ExceptionHandlingWithLoggerExample
         {
             _logger.LogInformation("PerformOperation completed.");
         }
-}
+    }
 }
