@@ -48,7 +48,6 @@ public class ExceptionHandlingExample
             Console.WriteLine("Execution complete.");
             //Typically used for cleanup (closing files, releasing resources)
         }
-
         Console.WriteLine("Program continues after exception handling."); //Program will continue if an exception is caught.
   }
 }
